@@ -9,7 +9,7 @@ For more details check:
 
 Image can be executed with [run.sh](run.sh) script:
 ```Shell
-$ WALLARM_API_TOKEN='<Your WMX Token>' ./run.sh
+$ NODE_TOKEN='<Your WMX Node Token>' ./run.sh
 ```
 Send an example of a non-malicious request:
 ```Shell
