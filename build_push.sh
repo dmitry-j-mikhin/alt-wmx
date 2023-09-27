@@ -1,5 +1,5 @@
 set -ex
 
 DOCKER_BUILDKIT=1 docker build --pull --no-cache \
- --tag dmikhin/alt-wmx:latest .
-docker push dmikhin/alt-wmx:latest
+ --tag dmikhin/alt-wmx:stand .
+docker push dmikhin/alt-wmx:stand

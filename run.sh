@@ -9,4 +9,4 @@ docker run -it --rm \
  -e "WALLARM_API_HOST=api.wallarm.ru" \
  -e "WALLARM_API_TOKEN=${NODE_TOKEN}" \
  -p 80:80 \
- dmikhin/alt-wmx:latest
+ dmikhin/alt-wmx:stand
