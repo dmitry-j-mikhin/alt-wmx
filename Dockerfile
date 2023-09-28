@@ -8,7 +8,7 @@ RUN --mount=type=bind,target=/tmp/build,source=scripts,ro \
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-EXPOSE 80
+EXPOSE 443
 
 STOPSIGNAL SIGQUIT
 
