@@ -11,4 +11,4 @@ docker run -it --rm \
  -e "WALLARM_API_HOST=api.wallarm.ru" \
  -e "WALLARM_API_TOKEN=${NODE_TOKEN}" \
  -p 80:80 \
- dmikhin/alt-wmx:stand
+ dkr.webmonitorx.ru/webmonitorx-node/devenv-node/alt-wmx:stand

@@ -1,8 +1,8 @@
 # alt-wmx
 
-This is example [docker image](https://hub.docker.com/r/dmikhin/alt-wmx) based on official
-[alt:p10](https://hub.docker.com/layers/library/alt/p10/images/sha256-eb4b440ce0cb34be2b6166bfce0bb082cadc690142df47d8988ab4561da0b452?context=explore)
-stable image with nginx and [WMX module](https://webmonitorx.ru/) integrated for WAF protection.
+This is example [docker image](https://hub.docker.com/r/dmikhin/alt-wmx) based on
+alt:c10f1 - dkr.webmonitorx.ru/webmonitorx-node/devenv-node/alt:c10f1
+image with nginx and [WMX module](https://webmonitorx.ru/) integrated for WAF protection.
 For more details check:
 * [Dockerfile](Dockerfile)
 * [scripts/build.sh](scripts/build.sh)

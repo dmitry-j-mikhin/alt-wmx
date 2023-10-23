@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:experimental
-FROM alt:p10
+FROM dkr.webmonitorx.ru/webmonitorx-node/devenv-node/alt:c10f1
 
 LABEL maintainer="Dmitry Mikhin <dmikhin@webmonitorx.ru>"
 
