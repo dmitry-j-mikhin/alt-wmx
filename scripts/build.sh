@@ -22,6 +22,7 @@ find /usr -type f -name nginx -o -name 'ngx*' | xargs sha256sum >> /node.sha256
 find /usr/lib64 -type d -name 'suricata*' | xargs -I% find % -type f ! -name '*.pyc' | xargs sha256sum >> /node.sha256
 find /usr/bin -type f -name 'suricata*' | xargs sha256sum >> /node.sha256
 
+sed -i -e 's|localhost:||' /etc/nginx/sites-enabled.d/default.conf
 cat /tmp/build/default_addon.conf >> /etc/nginx/sites-available.d/default.conf
 
 cp -a -v /tmp/build/docker-entrypoint.sh /
