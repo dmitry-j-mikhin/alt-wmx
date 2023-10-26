@@ -2,7 +2,7 @@
 
 set -e
 if [ -n "$WALLARM_MODE" ]; then
-  sed -i -e "s|wallarm_mode monitoring|wallarm_mode $WALLARM_MODE|g" /etc/nginx/sites-available.d/default.conf
+  sed -i -e "s|wallarm_mode monitoring|wallarm_mode $WALLARM_MODE|g" /etc/nginx/sites-enabled.d/default.conf
 fi
 if [ -n "$WALLARM_API_HOST" ]; then
   args="$args -H $WALLARM_API_HOST"
