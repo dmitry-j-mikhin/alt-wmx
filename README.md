@@ -13,18 +13,18 @@ $ NODE_TOKEN='<Your WMX Node Token>' ./run.sh
 ```
 Send an example of a non-malicious request:
 ```Shell
-$ curl --cacert /certs/ca.cer -u "administrator:защищенный" https://localhost/
+$ curl --cacert /certs/ca.cer -u "test:test" https://localhost/
 <html><body><h1>It works!</h1></body></html>
 ```
 The request will be processed normally.
 Send an example of a malicious request:
 ```Shell
-$ curl --cacert /certs/ca.cer -u "administrator:защищенный" https://localhost/etc/passwd
+$ curl --cacert /certs/ca.cer -u "test:test" https://localhost/etc/passwd
 <html>
 <head><title>403 Forbidden</title></head>
 <body>
 <center><h1>403 Forbidden</h1></center>
-<hr><center>nginx/1.22.1</center>
+<hr><center>nginx/1.24.0</center>
 </body>
 </html>
 ```

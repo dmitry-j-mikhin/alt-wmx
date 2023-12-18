@@ -1,3 +1,3 @@
 #/bin/sh
 
-htpasswd -c .htpasswd administrator
+htpasswd -c .htpasswd test
