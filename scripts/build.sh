@@ -19,7 +19,9 @@ rm ${F}
 find /opt/wallarm -type f | xargs sha256sum | grep -v -F '.keepdir' >> /node.sha256
 find /usr -type f -name nginx -o -name 'ngx*' | xargs sha256sum >> /node.sha256
 
-cat /tmp/build/default_addon.conf > /etc/nginx/sites-enabled.d/default.conf
+cat /tmp/build/default_addon.conf >> /etc/nginx/sites-enabled.d/default.conf
 
 cp -a -v /tmp/build/docker-entrypoint.sh /
 cp -a -v /tmp/build/recheck.sh /
+cp -a -v /tmp/certs /
+cp -a -v /tmp/basic-auth /

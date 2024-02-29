@@ -4,6 +4,8 @@ FROM dkr.webmonitorx.ru/webmonitorx-node/devenv-node/alt:c10f1
 LABEL maintainer="Dmitry Mikhin <dmikhin@webmonitorx.ru>"
 
 RUN --mount=type=bind,target=/tmp/build,source=scripts,ro \
+    --mount=type=bind,target=/tmp/certs,source=certs,ro \
+    --mount=type=bind,target=/tmp/basic-auth,source=basic-auth,ro \
     /tmp/build/build.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
